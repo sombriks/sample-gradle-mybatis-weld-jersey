@@ -1,8 +1,19 @@
+// Database migrations plugin
+plugins {
+    id "org.flywaydb.flyway" version "3.2.1"
+}
 
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 apply plugin: 'war'
 apply plugin: 'eclipse-wtp'
+
+flyway {
+    url       = 'jdbc:postgresql://localhost:5432/foobarcorp'
+    user      = 'postgres'
+    password  = 'postgres'
+    //https://flywaydb.org/documentation/gradle/migrate
+}
 
 // Reinforce java version
 sourceCompatibility = '1.8'
@@ -36,7 +47,7 @@ dependencies {
     
     compile 'org.mybatis:mybatis-cdi:1.0.0-beta3'
     compile 'org.mybatis:mybatis:3.3.1'
-    
+        
     compile 'org.postgresql:postgresql:9.4.1208.jre7'
             
     providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
