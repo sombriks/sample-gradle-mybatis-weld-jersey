@@ -36,7 +36,7 @@ dependencies {
     // 'test.useTestNG()' to your build script.
     testCompile 'junit:junit:4.12'
     
-	compile "javax.ws.rs:jsr311-api:1.1.1"
+	compile 'javax.ws.rs:javax.ws.rs-api:2.0.1'
 	
     compile 'com.sun.jersey:jersey-server:1.13'
     compile 'com.sun.jersey:jersey-core:1.13'

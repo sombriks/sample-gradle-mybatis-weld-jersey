@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+	<!DOCTYPE mapper PUBLIC '-//mybatis.org//DTD Mapper 3.0//EN'
+	  'http://mybatis.org/dtd/mybatis-3-mapper.dtd'>
+<mapper namespace='foo.bar.mapper.ClienteMapper'>
+
+	<resultMap type='foo.bar.model.Cliente' id='Cliente'>
+		<id property="numero" column="idcliente" />
+		<result property="nome" column="nomecliente" />
+	</resultMap>
+
+	<select id="byNumero" parameterType="int" resultMap="Cliente">
+		select *
+		from cliente where idcliente = #{param1}
+	</select>
+</mapper>

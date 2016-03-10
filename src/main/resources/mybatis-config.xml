@@ -12,6 +12,6 @@
 		</environment>
 	</environments>
 	<mappers>
-		<mapper class="foo.bar.mapper.DudeMapper" />
+		<mapper resource="foo/bar/mapper/ClienteMapper.xml" />
 	</mappers>
 </configuration>

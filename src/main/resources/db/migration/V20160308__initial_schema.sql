@@ -1,6 +1,6 @@
 
-create table dude(
-	iddude serial not null,
-	nomedude varchar(255) not null,
-	primary key (iddude)
+create table cliente(
+	idcliente serial not null,
+	nomecliente varchar(255) not null,
+	constraint cliente_pk primary key (idcliente)
 );

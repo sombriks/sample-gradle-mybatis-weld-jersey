@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 @XmlRootElement
-public class Dude {
+public class Cliente {
 	private String nome;
 	private int numero;
 }

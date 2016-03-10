@@ -6,14 +6,14 @@ import java.util.Set;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
-import foo.bar.resource.FooBarResource;
+import foo.bar.resource.ClienteResource;
 
 @ApplicationPath("/rs")
 public class FoobarApplication extends Application {
 	@Override
 	public Set<Class<?>> getClasses() {
 		Set<Class<?>> s = new HashSet<Class<?>>();
-		s.add(FooBarResource.class);
+		s.add(ClienteResource.class);
 		return s;
 	}
 }
