@@ -1,5 +1,6 @@
 package foo.bar.resource;
 
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -11,6 +12,7 @@ import org.mybatis.cdi.Mapper;
 import foo.bar.mapper.ClienteMapper;
 import foo.bar.model.Cliente;
 
+@RequestScoped
 @Path("/clientes")
 public class ClienteResource {
 
